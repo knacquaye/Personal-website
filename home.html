@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial -scale =1.0">
+    <title>NANA WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   <div id="header">
+   <div class = "container">
+        <nav>
+          <img src="pictures/ACQUAYE.svg"  class="logo" >
+          
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+        <p><center>SOFTWARE ENGINEER</center></p>
+        <h1><center>Hi, I'm <span>Nana</span> Acquaye From Ghana <br>Welcome To My Personal Website!</center></h1>
+    </div>
+</div>
+</div>
+
+
+
+   
+   <!---   ----about -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/h1234.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title"> About Me</h1>
+                <p>  Hello! My name is Nana Acquaye, and I'm a Computer Science student at the University Of San Francisco. 
+                     I've been on a long journey with computers, and I'm excited you are looking at my first ever Website!. 
+                     My aim is to use my skills to provide solution to real world problems,and most importantly have a positive impact on people.
+                     I highly believe in teamwork, communication, and overcoming challenges. Feel free to leave a message and have a wonderful day!
+
+                </p>
+                <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id ="skills">
+                <ul> 
+                    <li><span>Java</span><br> </li>
+                    <li><span>Python</span><br> </li>
+                    <li><span>C</span><br> </li>
+                    <li><span>Filmora</span><br> </li>
+                    <li><span>HTML/CSS</span><br></li>
+                    <li><span>Microsoft Access</span><br></li>
+                    <li><span>Microsoft Excel</span><br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id = "experience">
+                <ul> 
+                    <li><span>2019</span><br> Lead Designer at Vodafone Innovation Workshop(Accra,Ghana)</li>
+
+                    <li><span>2020</span><br> Research Assistant at University Of Ghana</li>
+
+                    <li><span>2021</span><br>IT intern at Zenith Bank(Accra,Ghana) </li>
+                   
+                </ul>
+            </div>
+            <div class="tab-contents" id = "education">
+                <ul> 
+                    <li><span>2021 - current</span><br>University Of San Francisco <br>Major: Computer Science <br>Minor: Economics </li>
+                    <li><span>2019 - 2021</span><br> East Airport International School(Accra,Ghana)</li>
+                    <li><span></span><br> </li>
+
+                </ul>
+            </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+<!-- video -->
+<div id ="video">
+    <div class="container"></div>
+    <h1 class = "sub-title"><center>Interview Video</center></h1>
+    <center>
+    <video src="pictures/video.mp4" autoplay controls>   your browser does not support   </video>
+</center>
+
+</div>
+</div>
+
+
+<!-- contact-->
+<div id="contact"> 
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class = "sub-title">Contact Me</h1>
+            <p><i class="far fa-envelope"></i>nanaacquaye09@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i>(415) 489-8657</p>
+            <div class="social-icons">
+                <a href="https://twitter.com/NanaAcquaye6"><i class="fab fa-twitter fa-xl"></i></a>
+                <a href="https://instagram.com/knacquaye?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram fa-xl"></i></a>
+                <a href="https://www.linkedin.com/in/nana-kwasi-acquaye-a0aa74250"><i class="fab fa-linkedin fa-xl"></i></a>
+            </div>
+            <a href= "pictures/Kwasi_Acquaye_ResumeFinal.pdf" download class="btn btn2"> Download CV</a>
+             
+        </div>
+
+            <div class="contact-right">
+                <form> 
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="email" name = "email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+   </div>
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+   </script>
+  
+</body>
+
+</html>
